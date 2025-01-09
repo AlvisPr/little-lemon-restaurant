@@ -1,0 +1,136 @@
+:root {
+    /* Primary Colors */
+    --primary-green: #495E57;
+    --primary-yellow: #F4CE14;
+  
+    /* Secondary Colors */
+    --secondary-salmon: #EE9972;
+    --secondary-peach: #FBDABB;
+  
+    /* Highlight Colors */
+    --highlight-light: #EDEFEE;
+    --highlight-dark: #333333;
+  
+    /* Text Colors */
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --text-light: #FFFFFF;
+    --text-muted: #888888;
+  
+    /* Background Colors */
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #FAFAFA;
+    --bg-tertiary: #F5F5F5;
+    --bg-dark: #222222;
+  
+    /* Accent Colors */
+    --accent-success: #4CAF50;
+    --accent-warning: #FFA726;
+    --accent-error: #EF5350;
+  
+    /* Gradient Colors */
+    --gradient-start: #495E57;
+    --gradient-end: #45554f;
+  
+    /* Border Colors */
+    --border-light: #EEEEEE;
+    --border-medium: #DDDDDD;
+    --border-dark: rgba(0, 0, 0, 0.1);
+  
+    /* Shadow Colors */
+    --shadow-light: rgba(0, 0, 0, 0.05);
+    --shadow-medium: rgba(0, 0, 0, 0.08);
+    --shadow-dark: rgba(0, 0, 0, 0.12);
+  
+    /* Overlay Colors */
+    --overlay-light: rgba(255, 255, 255, 0.9);
+    --overlay-dark: rgba(0, 0, 0, 0.7);
+  
+    /* State Colors */
+    --state-hover: rgba(244, 206, 20, 0.1);
+    --state-active: rgba(244, 206, 20, 0.2);
+    --state-focus: rgba(244, 206, 20, 0.3);
+  }
+  
+  /* Typography Scale */
+  :root {
+    --font-primary: 'Markazi Text', serif;
+    --font-secondary: 'Karla', sans-serif;
+    
+    /* Font Sizes */
+    --text-xs: 0.85rem;
+    --text-sm: 0.95rem;
+    --text-base: 1rem;
+    --text-md: 1.1rem;
+    --text-lg: 1.2rem;
+    --text-xl: 1.4rem;
+    --text-2xl: 1.6rem;
+    --text-3xl: 2rem;
+    --text-4xl: 2.5rem;
+    --text-5xl: 3rem;
+    --text-6xl: 3.5rem;
+  
+    /* Line Heights */
+    --leading-tight: 1.2;
+    --leading-snug: 1.4;
+    --leading-normal: 1.6;
+    --leading-relaxed: 1.8;
+    --leading-loose: 2;
+  
+    /* Font Weights */
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+  }
+  
+  /* Spacing Scale */
+  :root {
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 2.5rem;
+    --spacing-3xl: 3rem;
+    --spacing-4xl: 4rem;
+    --spacing-5xl: 5rem;
+    --spacing-6xl: 6rem;
+  }
+  
+  /* Border Radius */
+  :root {
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 9999px;
+  }
+  
+  /* Transitions */
+  :root {
+    --transition-fast: 150ms ease;
+    --transition-normal: 300ms ease;
+    --transition-slow: 500ms ease;
+  }
+  
+  /* Z-index Scale */
+  :root {
+    --z-negative: -1;
+    --z-elevate: 1;
+    --z-sticky: 100;
+    --z-drawer: 200;
+    --z-modal: 300;
+    --z-popover: 400;
+    --z-maximum: 999;
+  }
+  
+  /* Container Widths */
+  :root {
+    --container-sm: 640px;
+    --container-md: 768px;
+    --container-lg: 1024px;
+    --container-xl: 1200px;
+  }
+  

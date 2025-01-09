@@ -1,0 +1,219 @@
+.about-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(to bottom, #EDEFEE 0%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, #F4CE14, #495E57);
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+    align-items: center;
+  }
+  
+  .about-text {
+    padding-right: 2rem;
+    position: relative;
+  }
+  
+  .about-text::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #F4CE14, #495E57);
+    border-radius: 2px;
+  }
+  
+  .about-text h2 {
+    color: #495E57;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Markazi Text', serif;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .about-text h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 60px;
+    height: 3px;
+    background-color: #F4CE14;
+  }
+  
+  .about-text p {
+    color: #333333;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-family: 'Karla', sans-serif;
+  }
+  
+  .about-text p:last-child {
+    color: #495E57;
+    font-weight: 500;
+  }
+  
+  .about-images {
+    position: relative;
+    height: 400px;
+  }
+  
+  .about-img {
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(73, 94, 87, 0.15);
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(73, 94, 87, 0.2);
+  }
+  
+  .main-img {
+    position: absolute;
+    width: 70%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  
+  .secondary-img {
+    position: absolute;
+    width: 60%;
+    height: 250px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .about-highlights {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 3rem 0;
+  }
+  
+  .highlight-item {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #495E57 0%, #3a4a44 100%);
+    border-radius: 16px;
+    min-width: 200px;
+    color: white;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .highlight-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #F4CE14;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .highlight-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(244, 206, 20, 0.3);
+    box-shadow: 0 10px 30px rgba(73, 94, 87, 0.2);
+  }
+  
+  .highlight-item:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .highlight-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #F4CE14;
+    margin-bottom: 0.5rem;
+    font-family: 'Markazi Text', serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .highlight-text {
+    font-size: 1.1rem;
+    font-family: 'Karla', sans-serif;
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  
+    .about-text {
+      padding-right: 0;
+    }
+  
+    .about-text::before {
+      left: -15px;
+    }
+  
+    .about-images {
+      height: auto;
+      margin: 0 auto;
+      max-width: 100%;
+      padding: 2rem 0;
+    }
+  
+    .main-img,
+    .secondary-img {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      margin-bottom: 1rem;
+    }
+  
+    .secondary-img {
+      margin-bottom: 0;
+    }
+  
+    .about-highlights {
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 0;
+    }
+  
+    .highlight-item {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
