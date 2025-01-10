@@ -25,6 +25,7 @@ function RoutesWithTransitions() {
           <Route path="/summary" element={<Summary />} />
           <Route path="/reserve" element={<Reserve />} />
           <Route path="/" element={<Main />} />
+          <Route path="*" element={<Main />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>

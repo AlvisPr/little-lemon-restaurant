@@ -11,10 +11,6 @@ const Nav = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const navigate = useNavigate();
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
@@ -42,13 +38,19 @@ const Nav = () => {
     };
   }, [prevScrollPos]);
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   const handleLinkClick = (section) => {
     window.history.pushState(null, '', `/${section}`);
+    setIsOpen(false); // Close menu when navigating
   };
 
   const goToStart = (e) => {
     e.preventDefault();
     navigate('/');
+    setIsOpen(false);
   };
 
   return (
